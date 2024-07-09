@@ -2,7 +2,7 @@
 module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   presets: [],
-  darkMode: 'media', // or 'class'
+  //darkMode: 'media', // or 'class'
   theme: {
     screens: {
       sm: '640px',
@@ -12,6 +12,8 @@ module.exports = {
       '2xl': '1536px',
     },
     colors: ({ colors }) => ({
+      "makers_green": "#6DBFA4",
+      "makers_purple": "#8695CB",
       inherit: colors.inherit,
       current: colors.current,
       transparent: colors.transparent,
