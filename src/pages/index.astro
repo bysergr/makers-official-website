@@ -8,20 +8,27 @@ import Layout from '../layouts/Layout.astro';
 import Testimonials from '../components/Testimonials.astro';
 import CallToAction from '../components/CallToAction.astro';
 import Blog from '../components/Blog.astro';
----
+import Fellowships from '../components/Fellowships.astro';
+import Questions from '../components/Questions.astro';
 
-<Layout title="Welcome to Astrolus.">
-	<main class="space-y-40 mb-40">
-		<HeroSection/>
-		<Features/>
-		<LeadersFounders/>
-		<Team/>
-		<!--<Stats/> -->
-		<Testimonials/>
-		<CallToAction/>
-		<Blog/>
-	</main>
-</Layout>
+import ThemeProvider from "../theme/ThemeProvider";
+---
+<ThemeProvider>
+	<Layout title="Welcome to Astrolus.">
+		<main class="space-y-40 mb-40">
+			<HeroSection/>
+			<Features/>
+			<LeadersFounders/>
+			<Team/>
+			<Fellowships/>
+			<!--<Stats/> -->
+			<Testimonials/>
+			<CallToAction/>
+			<Blog/>
+			<Questions/>
+		</main>
+	</Layout>
+</ThemeProvider>
 <style is:global>
   .text-gradient {
     background: linear-gradient(90deg, #6dbfa4, #8695cb);
