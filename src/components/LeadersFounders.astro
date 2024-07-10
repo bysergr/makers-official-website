@@ -1,81 +1,138 @@
 ---
-import { Image } from 'astro:assets';
-import Container from "./Container.astro"
+import { Image } from "astro:assets";
+import Container from "./Container.astro";
 
-import andres_bilbao_profile from "../../public/images/staff/andres_bilbao_profile.png"
-import lorena_sanchez_profile from "../../public/images/staff/lorena_sanchez_profile.jpg"
-import rebecca_portilla_profile from "../../public/images/staff/rebecca_portilla_profile.jpg"
+import andres_bilbao_profile from "../../public/images/staff/andres_bilbao_profile.jpg";
+import lorena_sanchez_profile from "../../public/images/staff/lorena_sanchez_profile.jpg";
 
-import FS_image from "../../public/images/FS_logo.jpeg"
-import EI_image from "../../public/images/EI_logo (2).jpeg"
-import Rappi from "../../public/images/startups/rappi.png"
-import Makers from "../../public/images/startups/makers.png"
-import Rockstart from "../../public/images/startups/rockstart.png"
-import Linio from "../../public/images/startups/linio.png"
-
+import Rappi from "../../public/images/startups/rappi.png";
+import Makers from "../../public/favicon.svg";
+import Rockstart from "../../public/images/startups/rockstart.png";
+import Linio from "../../public/images/startups/linio.png";
 ---
 
-<section class="relative text-center pb-12 md:pb-20 sm:px-6 ">
-    <Container>
-        <div class="max-w-4xl mx-auto">
-            {/* TITLE */}
-            <h2 class="text-3xl font-bold text-gray-800 md:text-4xl dark:text-white" data-aos="zoom-y-out">Founders & Leaders</h2>
-            <div class="mx-auto grid grid-cols-1 md:grid-cols-3">
-                {/* First Item */}
-                <article class="max-w-[280px] md:max-w-[400px] mx-auto flex flex-col md:flex-row justify-center sm:justify-normal items-center sm:items-start" data-aos="zoom-y-out">
-                    <Image src={lorena_sanchez_profile} alt={`Picture of Lorena Sanchez`} class="sm:-translate-y-5" width={180} height={180} style={{ aspectRatio: 1, display: "block", width: 180, height: 180 }} />
-                    <div class="text-left h-auto flex flex-col max-w-[280px] md:max-w-[400px]">
-                        <h3 class="font-semibold  text-center sm:text-lg sm:text-left">Lorena Sanchez García</h3>
-                        <ul class="list-disc list-outside marker:text-gray-400 font-light [&>li]:md:max-w-[400px] [&>li]:max-w-[220px] [&>li]:my-1 [&>li]:translate-x-4">
-                            <li class="text-pretty">Leader & Co-founder
-                                <div class="my-4 flex gap-2">
-                                    <Image src={Makers} alt="image of Makers" width={35} />
-                                </div>
-                            </li>
-                            <li>Ex-Rappi<br />Ex-Rockstar<br />Ex-Linio</li>
-                            <div class="my-4 flex gap-2 flex-wrap translate-x-4">
-                                <Image src={Rappi} alt="image of Rappi" width={80} height={35} />
-                                <Image src={Rockstart} alt="image of Rappi" width={80} height={35} />
-                                <Image src={Linio} alt="image of Rappi" width={80} height={35} />
-                                
-                            </div>
-                        </ul>
-                    </div>
-                </article>
-
-                {/* Second Item */}
-                <article class="max-w-[280px] md:max-w-[400px] mx-auto flex flex-col md:flex-row justify-center sm:justify-normal items-center sm:items-start" data-aos="zoom-y-out">
-                    <Image src={andres_bilbao_profile} alt={`Picture of Andres Bilbao`} class="sm:-translate-y-5" width={180} height={180} style={{ aspectRatio: 1, display: "block", width: 180, height: 180 }} />
-                    <div class="text-left h-auto flex flex-col max-w-[280px] md:max-w-[400px]">
-                        <h3 class="font-semibold text-center sm:text-lg sm:text-left">Andrés Bilbao</h3>
-                        <ul class="list-disc list-outside marker:text-gray-400 font-light [&>li]:md:max-w-[400px] [&>li]:max-w-[220px] [&>li]:my-1 [&>li]:translate-x-4">
-                            <li class="text-pretty">Co-founder
-                                <div class="my-4 flex gap-2">
-                                    <Image src={Makers} alt="image of Makers" width={35} />
-                                    <Image src={Rappi} alt="image of Rappi" width={80} height={35} />
-                                </div>
-                            </li>
-                            <li>Helped start and fundraise 17 startups in LATAM.</li>
-                        </ul>
-                    </div>
-                </article>
-
-                {/* Thir Item */}
-                <article class="max-w-[280px] md:max-w-[400px] mx-auto flex flex-col md:flex-row justify-center sm:justify-normal items-center sm:items-start" data-aos="zoom-y-out">
-                    <Image src={rebecca_portilla_profile} alt={`Picture of Rebecca Portilla`} class="sm:-translate-y-5" width={180} height={180} style={{ aspectRatio: 1, display: "block", width: 180, height: 180 }} />
-                    <div class="text-left h-auto flex flex-col max-w-[280px] md:max-w-[400px]">
-                        <h3 class="font-semibold text-center sm:text-lg sm:text-left">Rebecca Portilla</h3>
-                        <ul class="list-disc list-outside marker:text-gray-400 font-light [&>li]:md:max-w-[400px] [&>li]:max-w-[220px] [&>li]:my-1 [&>li]:translate-x-4">
-                            <li class="text-pretty">Leader
-                                <div class="my-4 flex gap-2">
-                                    <Image src={Makers} alt="image of Makers" width={35} />
-                                </div>
-                            </li>
-                            <li>Helped start and fundraise 17 startups in LATAM.</li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
+<section class="flex text-center">
+  <Container>
+    <h2
+      class="mb-20 space-y-4 text-5xl font-bold text-gray-800 md:text-4xl dark:text-white"
+    >
+      Founders & Leaders
+    </h2>
+    <div
+      class="grid md:grid-cols-2 justify-items-center text-gray-800 dark:text-white gap-8 w-full"
+    >
+      <article
+        class="lg:flex gap-8 h-full w-full my-0 p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none"
+      >
+        <Image
+          src={lorena_sanchez_profile}
+          alt="Lorena Sanchez smiley face"
+          width={130}
+          height={130}
+          class="rounded-full w-[130px] h-[130px] block mx-auto lg:mx-0"
+        />
+        <div class="my-auto text-center lg:text-left pt-6 lg:pt-0">
+          <h3 class="font-semibold text-2xl">Lorena Sanchez García</h3>
+          <ul class="list-none">
+            <li class="text-pretty dark:text-white/90 mt-2">
+              Leader & Co-founder
+            </li>
+            <li class="h-fit mt-2">
+              <div class="flex items-center gap-3 mx-auto lg:mx-0 w-fit">
+                <Image
+                  src={Rappi}
+                  class="block h-[30px] w-[80px]"
+                  alt="Rappi Logo"
+                  width={80}
+                  height={30}
+                />
+                <Image
+                  src={Rockstart}
+                  alt="Rockstart Logo"
+                  class="block h-[50px] w-[50px]"
+                  width={50}
+                  height={50}
+                />
+                <Image
+                  src={Linio}
+                  alt="Linio Logo"
+                  class="block h-[30px] w-[80px]"
+                  width={80}
+                  height={30}
+                />
+              </div>
+            </li>
+          </ul>
         </div>
-    </Container>
+      </article>
+
+      {/* Second Item */}
+      <article
+        class="lg:flex gap-8 h-full w-full my-0 p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none"
+      >
+        <Image
+          src={andres_bilbao_profile}
+          alt="Andres Bilbao smiley face"
+          width={130}
+          height={130}
+          class="rounded-full w-[130px] h-[130px] block mx-auto lg:mx-0"
+        />
+        <div class="my-auto text-center lg:text-left pt-6 lg:pt-0">
+          <h3 class="font-semibold lg:text-2xl">Andrés Bilbao</h3>
+          <ul class="list-none">
+            <li class="text-pretty dark:text-white/90 mt-2">Co-founder</li>
+            <li class="h-fit mt-2">
+              <div class="flex items-center gap-3 mx-auto lg:mx-0 w-fit">
+                <Image
+                  src={Rappi}
+                  class="block h-[30px] w-[80px]"
+                  alt="Rappi Logo"
+                  width={80}
+                  height={30}
+                />
+                <Image
+                  src={Makers}
+                  alt="Makers Logo"
+                  class="block h-[50px] w-[50px]"
+                  width={50}
+                  height={50}
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      {/* Thir Item */}
+      <!-- <article
+        class="max-w-[280px] md:max-w-[400px] mx-auto flex flex-col md:flex-row justify-center sm:justify-normal items-center sm:items-start"
+      >
+        <Image
+          src={rebecca_portilla_profile}
+          alt="Picture of Rebecca Portilla"
+          width={80}
+          height={80}
+          class="rounded-full"
+        />
+        <div
+          class="text-left h-auto flex flex-col max-w-[280px] md:max-w-[400px]"
+        >
+          <h3 class="font-semibold text-center sm:text-lg sm:text-left">
+            Rebecca Portilla
+          </h3>
+          <ul
+            class="list-disc list-outside marker:text-gray-400 font-light [&>li]:md:max-w-[400px] [&>li]:max-w-[220px] [&>li]:my-1 [&>li]:translate-x-4"
+          >
+            <li>Head of Placements</li>
+            <li class="text-pretty">
+              Team Leader
+              <div class="my-4 flex gap-2">
+                <Image src={Makers} alt="image of Makers" width={35} />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </article> -->
+    </div>
+  </Container>
 </section>

@@ -8,7 +8,6 @@ import Layout from '../layouts/Layout.astro';
 import Testimonials from '../components/Testimonials.astro';
 import CallToAction from '../components/CallToAction.astro';
 import Blog from '../components/Blog.astro';
-import Partners from '../components/Partners.astro';
 ---
 
 <Layout title="Welcome to Astrolus.">
@@ -21,17 +20,12 @@ import Partners from '../components/Partners.astro';
 		<Testimonials/>
 		<CallToAction/>
 		<Blog/>
-		<Partners/>
 	</main>
 </Layout>
 <style is:global>
-	@tailwind base;
-	@tailwind components;
-	@tailwind utilities;
-	.text-gradient {
-		background: linear-gradient(90deg, #6DBFA4, #8695CB);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
-
+  .text-gradient {
+    background: linear-gradient(90deg, #6dbfa4, #8695cb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 </style>
