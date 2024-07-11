@@ -9,12 +9,12 @@ const { profile } = Astro.props;
     <Image
       src={profile.photo}
       alt={profile.name}
-      class="rounded-full"
+      class="rounded-full object-cover h-[160px] w-[160px]"
       width={160}
       height={160}
     />
-    <div class="text-left h-auto flex flex-col items-center mt-8">
-      <h3 class="font-semibold text-center text-lg">{profile.name}</h3>
+    <div class="text-left h-auto flex flex-col items-center mt-2">
+      <h3 class="font-semibold text-lg">{profile.name}</h3>
       <p class="font-normal dark:text-white/90 my-1 text-center">
         {profile.squad}
       </p>
