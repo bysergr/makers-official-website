@@ -5,47 +5,52 @@ import DataSharingPolicy from './ui/DataSharingPolicy.jsx';
 ---
 
 <section id="questions" class="relative px-4 pt-32">
-  <Fade triggerOnce>
+  
     <h2 class="md:text-4xl text-3xl font-semibold text-center text-gray-900 pb-10 md:pb-10">
       Frequently Asked Questions <br /> You Have the <span class="text-gradient-2">Questions</span>, We Have the <span class="text-gradient-2">Answers</span>
     </h2>
     <div class="max-w-4xl mx-auto border border-gray-200 rounded-xl p-6 bg-white shadow-lg">
       <QuestionItem 
+        client:load
         title="What is the Entrepreneurial Investing program about?" 
         answer="The program offers comprehensive training on how to invest in startups in Latin America. It includes strategies, tips, and secrets from regional experts to make informed decisions and maximize investment returns." 
       />
       <hr class="my-4 w-full border-gray-300" />
 
       <QuestionItem 
+      client:load
         title="Who are the experts behind the program?" 
         answer="The program is designed and led by experienced investors and professionals from the Latam entrepreneurial ecosystem, with years of successful investment experience and deep market knowledge." 
       />
       <hr class="my-4 w-full border-gray-300" />
 
       <QuestionItem 
+      client:load
         title="What will I learn in the program?" 
         answer="You will learn how to identify promising startups, conduct effective due diligence, understand different business models, evaluate founding teams, and much more. You will also receive practical advice and real case studies." 
       />
       <hr class="my-4 w-full border-gray-300" />
 
       <QuestionItem 
+      client:load
         title="Are there any prerequisites to join the program?" 
         answer="No specific prior knowledge is required, although a basic understanding of finance and business can be helpful. The program is designed to be accessible to both beginners and experienced investors." 
       />
       <hr class="my-4 w-full border-gray-300" />
 
-      <DataSharingPolicy />
+      <DataSharingPolicy client:load/>
       <hr class="my-4 w-full border-gray-300" />
 
       <QuestionItem 
+        client:load
         title="How can I get in touch with you?" 
         answer="Feel free to email us at info@entrepreneurial.com." 
       />
     </div>
     <div class="relative px-4 my-14">
       <p class="text-xl text-black max-w-4xl mx-auto text-center">
-        Still have more questions? Contact us <a href="mailto:info@fundraisingschool.com" class="text-EI_new_green hover:text-EI_yellow transition-colors">info@entrepreneurial.com</a>
+        Still have more questions? Contact us <a href="mailto:team@makers.ngo" class="text-makers_green hover:text-makers_purple transition-colors">team@maker.ngo</a>
       </p>
     </div>
-  </Fade>
+
 </section>

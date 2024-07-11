@@ -12,8 +12,10 @@ import sara_liefmann_profile from "../../public/images/staff/sara_liefmann_profi
 import julian_bolanos_profile from "../../public/images/staff/julian_bolanos_profile.jpg";
 import maria_fernanda_zamarriego_profile from "../../public/images/staff/maria_fernanda_zamarriego_profile.jpg";
 import antonia_santamaria_profile from "../../public/images/staff/antonia_santamaria_profile.jpg";
-import vanessa_castro_profile from "../../public/images/staff/random_profile.jpg";
-import andres_palacio_profile from "../../public/images/staff/random_profile.jpg";
+import vanessa_castro_profile from "../../public/images/staff/vanessa_castro_profile.jpeg";
+import andres_palacio_profile from "../../public/images/staff/andres_palacio_profile.jpeg";
+import manuel_gruezo_profile from "../../public/images/staff/manuel_gruezo_profile.png";
+import gabriela_garcia_profile from "../../public/images/staff/gabriela_garcia_profile.png";
 
 const team_members = [
   {
@@ -71,6 +73,16 @@ const team_members = [
     squad: "Marketing",
     photo: maria_fernanda_zamarriego_profile,
   },
+  {
+    name: "Manuel Gruezo",
+    squad: "Placement | Platform",
+    photo: manuel_gruezo_profile,
+  },
+  {
+    name: "Gabriela García",
+    squad: "Marketing",
+    photo: gabriela_garcia_profile,
+  },
 ];
 ---
 
@@ -79,11 +91,10 @@ const team_members = [
     <section id="team" class="relative text-center">
       <h2
         class="mb-20 space-y-4 text-5xl font-bold text-gray-800 md:text-4xl dark:text-white"
-        data-aos="zoom-y-out"
       >
         Makers Team
       </h2>
-      <div class="mx-auto grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div class="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {
           team_members.map((member, index) => (
             <Profile key={index} profile={member} />

@@ -1,0 +1,46 @@
+---
+import { Image } from "astro:assets";
+
+const steps = [
+  {
+    title: 'Step 1: Apply',
+    description: `Monthly applications! Have ready your CV, references and awards to fill the application (Remember it will never have a cost). Only apply once in a month and in the time bounds. The`,
+    icon: 'icon-download', // Replace with the actual icon class or image path
+  },
+  {
+    title: 'Step 2: Interview Rounds',
+    description: `W`,
+    icon: 'icon-add-content', // Replace with the actual icon class or image path
+  },
+  {
+    title: 'Step 3: Problem Solving Case',
+    description: `Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.`,
+    icon: 'icon-customize', // Replace with the actual icon class or image path
+  },
+  {
+    title: 'Join the biggest young leaders community in LATAM!',
+    description: ``,
+    icon: 'icon-ready', // Replace with the actual icon class or image path
+  },
+];
+---
+
+<section>
+  <h2 class="text-3xl font-bold mb-6">We are always looking for the top 1% of students</h2>
+  <div class="flex flex-col gap-6">
+    {steps.map(step => (
+      <div class="flex items-start gap-4">
+        <div class="text-2xl">
+          <i class={step.icon}></i>
+        </div>
+        <div class="flex-1">
+          <div class="font-semibold mb-1">{step.title}</div>
+          <p class="m-0">{step.description}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+  <div class="mt-8">
+    <Image src="../../public/images/photos/recruitment_photo.png" alt={"Recruitment Image"} />
+  </div>
+</section>
