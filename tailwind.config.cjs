@@ -4,7 +4,7 @@ const withMT = require("@material-tailwind/react/utils/withMT");
 module.exports = withMT({
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   presets: [],
-  //darkMode: 'media', // or 'class'
+  darkMode: 'media', // or 'class'
   theme: {
     screens: {
       sm: '640px',
