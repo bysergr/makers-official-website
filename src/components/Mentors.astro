@@ -1,0 +1,87 @@
+---
+import { Image } from "astro:assets";
+import Container from "./Container.astro";
+import ProfileMentor from "./ui/ProfileMentor.astro"
+
+import andres_noero_profile from "../../public/images/mentors/andres_noero_profile.jpg"
+import angela_acosta_profile from "../../public/images/mentors/angela_acosta_profile.jpg"
+import dylan_rosemberg_profile from "../../public/images/mentors/dylan_rosemberg_profile.jpg"
+import luis_felipe_jaramillo_profile from "../../public/images/mentors/luis_felipe_jaramillo_profile.jpg"
+import robbie_j_frie_profile from "../../public/images/mentors/robbie_j_frie_profile.jpg"
+import santiago_valdes_profile from "../../public/images/mentors/santiago_valdes_profile.jpg"
+import tamara_chayo_profile from "../../public/images/mentors/tamara_chayo_profile.jpg"
+
+import morado_logo from "../../public/images/partners/morado.png"
+import rockstart_logo from "../../public/images/startups/rockstart.png"
+import kinnto_logo from "../../public/images/startups/kinnto_logo.jpg"
+import vai_community_logo from "../../public/images/startups/vai_community_logo.jpg"
+import medu_protection_logo from "../../public/images/startups/medu_protection_logo.jpg"
+import microsoft_logo from "../../public/images/startups/microsoft_logo.svg"
+import stanford_logo from "../../public/images/startups/stanford_logo.png"
+
+
+const mentors = [
+    {
+        name: "Andres Noero",
+        photo: andres_noero_profile,
+        startup_logo: vai_community_logo,
+        squad: "CEO"
+    },
+    {
+        name: "Angela Acosta",
+        photo: angela_acosta_profile,
+        startup_logo: morado_logo,
+        squad: "Founder & CEO"
+    },
+    {
+        name: "Dylan Rosemberg",
+        photo: dylan_rosemberg_profile,
+        startup_logo: rockstart_logo,
+        squad: "Founder & CEO"
+    },
+    {
+        name: "Luis Felipe Jaramillo",
+        photo: luis_felipe_jaramillo_profile,
+        startup_logo: stanford_logo,
+        squad: "Self Funded Searcher"
+    },
+    {
+        name: "Robbie J Frie",
+        photo: robbie_j_frie_profile,
+        startup_logo: kinnto_logo,
+        squad: "Cofounder & CEO Kinnto.ai"
+    },
+    {
+        name: "Santiago Valdes",
+        photo: santiago_valdes_profile,
+        startup_logo: microsoft_logo,
+        squad: "Product Manager"
+    },
+    {
+        name: "Tamara Chayo",
+        photo: tamara_chayo_profile,
+        startup_logo: medu_protection_logo,
+        squad: "Founder & CEO"
+    }
+];
+---
+
+<section class="flex text-center">
+    <Container>
+        <section id="team" class="relative text-center">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="h2 pb-12" data-aos="zoom-y-out">
+                    Our top mentors!
+                </h2>
+                <div class="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {mentors.map((mentor, index) => (
+                        <div class="rounded-full">
+                            <ProfileMentor key={index} profile={mentor} />
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    </Container>
+  </section>
+  
