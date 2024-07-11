@@ -1,0 +1,95 @@
+---
+import { Image } from "astro:assets";
+import Container from "./Container.astro";
+import Profile from "./ui/Profile.astro";
+
+import sergio_rey_profile from "../../public/images/staff/sergio_rey_profile.jpg";
+import fabian_espitia_profile from "../../public/images/staff/fabian_espitia_profile.jpg";
+import valentina_kloster_profile from "../../public/images/staff/valentina_kloster_profile.jpg";
+import manuel_romero_profile from "../../public/images/staff/manuel_romero_profile.jpg";
+import natalia_blanco_profile from "../../public/images/staff/natalia_blanco_profile.jpg";
+import sara_liefmann_profile from "../../public/images/staff/sara_liefmann_profile.jpg";
+import julian_bolanos_profile from "../../public/images/staff/julian_bolanos_profile.jpg";
+import maria_fernanda_zamarriego_profile from "../../public/images/staff/maria_fernanda_zamarriego_profile.jpg";
+import antonia_santamaria_profile from "../../public/images/staff/antonia_santamaria_profile.jpg";
+import vanessa_castro_profile from "../../public/images/staff/random_profile.jpg";
+import andres_palacio_profile from "../../public/images/staff/random_profile.jpg";
+
+const team_members = [
+  {
+    name: "Sergio Rey",
+    squad: "Platform | Recruitment",
+    photo: sergio_rey_profile,
+  },
+  {
+    name: "Fabian Espitia",
+    squad: "Platform",
+    photo: fabian_espitia_profile,
+  },
+  {
+    name: "Valentina Kloster",
+    squad: "Platform",
+    photo: valentina_kloster_profile,
+  },
+  {
+    name: "Manuel Romero",
+    squad: "Platform | Alumni",
+    photo: manuel_romero_profile,
+  },
+  {
+    name: "Natalia Blanco",
+    squad: "Placement | Recruitment",
+    photo: natalia_blanco_profile,
+  },
+  {
+    name: "Sara Liefmann",
+    squad: "Marketing",
+    photo: sara_liefmann_profile,
+  },
+  {
+    name: "Vanessa Castro",
+    squad: "Marketing",
+    photo: vanessa_castro_profile,
+  },
+  {
+    name: "Julian Bolaños",
+    squad: "Platform",
+    photo: julian_bolanos_profile,
+  },
+  {
+    name: "Andres Palacio",
+    squad: "Partnerships | Projects",
+    photo: andres_palacio_profile,
+  },
+  {
+    name: "Antonia Santamaria",
+    squad: "Recruitment",
+    photo: antonia_santamaria_profile,
+  },
+  {
+    name: "Maria Fernanda Zamarriego",
+    squad: "Marketing",
+    photo: maria_fernanda_zamarriego_profile,
+  },
+];
+---
+
+<section class="text-center">
+  <Container>
+    <section id="team" class="relative text-center">
+      <h2
+        class="mb-20 space-y-4 text-5xl font-bold text-gray-800 md:text-4xl dark:text-white"
+        data-aos="zoom-y-out"
+      >
+        Makers Team
+      </h2>
+      <div class="mx-auto grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-8">
+        {
+          team_members.map((member, index) => (
+            <Profile key={index} profile={member} />
+          ))
+        }
+      </div>
+    </section>
+  </Container>
+</section>

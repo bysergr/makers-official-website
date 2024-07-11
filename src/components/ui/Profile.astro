@@ -1,0 +1,23 @@
+---
+import { Image } from "astro:assets";
+
+const { profile } = Astro.props;
+---
+
+<div class="dark:text-white">
+  <article class="flex flex-col items-center mx-auto h-[360px] min-w-[220px]">
+    <Image
+      src={profile.photo}
+      alt={profile.name}
+      class="rounded-full"
+      width={160}
+      height={160}
+    />
+    <div class="text-left h-auto flex flex-col items-center mt-8">
+      <h3 class="font-semibold text-center text-lg">{profile.name}</h3>
+      <p class="font-normal dark:text-white/90 my-1 text-center">
+        {profile.squad}
+      </p>
+    </div>
+  </article>
+</div>
