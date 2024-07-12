@@ -19,19 +19,14 @@ import gabriela_garcia_profile from "../../public/images/staff/gabriela_garcia_p
 
 const team_members = [
   {
+    name: "Sara Liefmann",
+    squad: "Marketing",
+    photo: sara_liefmann_profile,
+  },
+  {
     name: "Sergio Rey",
     squad: "Platform | Recruitment",
     photo: sergio_rey_profile,
-  },
-  {
-    name: "Fabian Espitia",
-    squad: "Platform",
-    photo: fabian_espitia_profile,
-  },
-  {
-    name: "Valentina Kloster",
-    squad: "Platform",
-    photo: valentina_kloster_profile,
   },
   {
     name: "Manuel Romero",
@@ -39,14 +34,14 @@ const team_members = [
     photo: manuel_romero_profile,
   },
   {
-    name: "Natalia Blanco",
-    squad: "Placement | Recruitment",
-    photo: natalia_blanco_profile,
+    name: "Fabian Espitia",
+    squad: "Platform",
+    photo: fabian_espitia_profile,
   },
   {
-    name: "Sara Liefmann",
-    squad: "Marketing",
-    photo: sara_liefmann_profile,
+    name: "Natalia Blanco",
+    squad: "Placement",
+    photo: natalia_blanco_profile,
   },
   {
     name: "Vanessa Castro",
@@ -79,6 +74,11 @@ const team_members = [
     photo: manuel_gruezo_profile,
   },
   {
+    name: "Valentina Kloster",
+    squad: "Platform",
+    photo: valentina_kloster_profile,
+  },
+  {
     name: "Gabriela García",
     squad: "Marketing",
     photo: gabriela_garcia_profile,
@@ -90,11 +90,13 @@ const team_members = [
   <Container>
     <section class="relative text-center">
       <h2
-        class="mb-20 space-y-4 text-5xl font-bold text-gray-800 md:text-4xl dark:text-white"
+        class="mb-20 space-y-4 text-5xl font-bold md:text-4xl text-gradient dark:text-white"
       >
         Makers Team
       </h2>
-      <div class="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div
+        class="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16 lg:gap-y-40"
+      >
         {
           team_members.map((member, index) => (
             <Profile key={index} profile={member} />

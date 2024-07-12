@@ -1,27 +1,30 @@
 ---
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
 
 const { key, profile } = Astro.props;
 ---
+
 <div class="dark:text-white">
-    <article class="flex flex-col items-center mx-auto h-[360px] min-w-[220px]">
-        <Image
-        src={profile.photo}
-        alt={profile.name}
-        class="rounded-full"
-        width={160}
-        height={160}
-        />
-        <div class="text-left h-auto flex flex-col items-center mt-2">
-            <h3 class="font-semibold text-lg">{profile.name}</h3>
-            <p class="font-normal dark:text-white/90 my-1 text-center">{profile.squad}</p>
-            <Image
-                src={profile.startup_logo}
-                class="block mt-2"
-                alt={profile.name + " startup"}
-                width={profile.startup_logo_width}
-                height={profile.startup_logo_height}
-            />
-         </div>
-    </article>
+  <article class="flex flex-col items-center mx-auto min-w-[220px]">
+    <Image
+      src={profile.photo}
+      alt={profile.name}
+      class="rounded-full"
+      width={160}
+      height={160}
+    />
+    <div class="text-left h-auto flex flex-col items-center mt-2">
+      <h3 class="font-semibold text-lg">{profile.name}</h3>
+      <p class="font-normal dark:text-white/90 my-1 text-center">
+        {profile.squad}
+      </p>
+      <Image
+        src={profile.startup_logo}
+        class="block mt-2"
+        alt={profile.name + " startup"}
+        width={profile.startup_logo_width}
+        height={profile.startup_logo_height}
+      />
+    </div>
+  </article>
 </div>

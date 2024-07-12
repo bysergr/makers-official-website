@@ -1,12 +1,20 @@
 ---
-import Container from "./Container.astro"
-
+import Container from "./Container.astro";
 ---
 
 <div id="hire" class="relative py-16">
-  <div aria-hidden="true" class="absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
-    <div class="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
-    <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
+  <div
+    aria-hidden="true"
+    class="absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
+  >
+    <div
+      class="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"
+    >
+    </div>
+    <div
+      class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"
+    >
+    </div>
   </div>
   <Container>
     <div class="relative">
@@ -15,7 +23,7 @@ import Container from "./Container.astro"
           loading="lazy"
           width="400"
           height="400"
-          src="./images/avatars/avatar.webp"
+          src="/images/staff/manuel_gruezo_profile.png"
           alt="member photo"
           class="h-8 w-8 rounded-full object-cover"
         />
@@ -23,7 +31,7 @@ import Container from "./Container.astro"
           loading="lazy"
           width="200"
           height="200"
-          src="./images/avatars/avatar-2.webp"
+          src="/images/staff/andres_palacio_profile.jpeg"
           alt="member photo"
           class="h-12 w-12 rounded-full object-cover"
         />
@@ -31,7 +39,7 @@ import Container from "./Container.astro"
           loading="lazy"
           width="200"
           height="200"
-          src="./images/avatars/avatar-3.webp"
+          src="/images/staff/vanessa_castro_profile.jpeg"
           alt="member photo"
           class="z-10 h-16 w-16 rounded-full object-cover"
         />
@@ -39,7 +47,7 @@ import Container from "./Container.astro"
           loading="lazy"
           width="200"
           height="200"
-          src="./images/avatars/avatar-4.webp"
+          src="/images/staff/sara_liefmann_profile.jpg"
           alt="member photo"
           class="relative h-12 w-12 rounded-full object-cover"
         />
@@ -47,29 +55,42 @@ import Container from "./Container.astro"
           loading="lazy"
           width="200"
           height="200"
-          src="./images/avatars/avatar-1.webp"
+          src="/images/staff/maria_fernanda_zamarriego_profile.jpg"
           alt="member photo"
           class="h-8 w-8 rounded-full object-cover"
         />
       </div>
       <div class="mt-6 m-auto space-y-6 md:w-8/12 lg:w-7/12">
-        <h1 class="text-center text-4xl font-bold text-gray-800 dark:text-white md:text-5xl">Hire a Maker!</h1>
+        <h1
+          class="text-center text-4xl font-bold text-gray-800 dark:text-white md:text-5xl"
+        >
+          Hire a Maker!
+        </h1>
         <p class="text-center text-xl text-gray-600 dark:text-gray-300">
-          When you are hiring a maker you are not just hiring top talent for your company, you are improving the ecosystem
+          When you are hiring a maker you are not just hiring top talent for
+          your company, you are improving the ecosystem
         </p>
-        <span class="text-center text-xl text-gray-600 dark:text-gray-300 w-full mx-auto block">
-          Any doubts: <a href="mailto:placements@makers.ngo" class="text-makers_purple hover:text-primary transition-colors">placements@makers.ngo</a>
+        <span
+          class="text-center text-xl text-gray-600 dark:text-gray-300 w-full mx-auto block"
+        >
+          Any doubts: <a
+            href="mailto:placements@makers.ngo"
+            class="text-makers_purple hover:text-primary transition-colors"
+            >placements@makers.ngo</a
+          >
         </span>
         <div class="flex flex-wrap justify-center gap-6">
           <a
-              href="https://airtable.com/apptomXWawC2sGZnV/shrpA1XvnK4di020A" target="_blank" rel="noopener"
-              class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+            href="https://airtable.com/apptomXWawC2sGZnV/shrpA1XvnK4di020A"
+            target="_blank"
+            rel="noopener"
+            class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+          >
+            <span
+              class="relative text-base font-semibold text-white dark:text-dark"
+              >Let's Do It!</span
             >
-              <span class="relative text-base font-semibold text-white dark:text-dark"
-                >Let's Do It!</span
-              >
-            </a>
-            
+          </a>
         </div>
       </div>
     </div>

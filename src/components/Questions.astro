@@ -1,51 +1,64 @@
 ---
-import { Fade } from 'react-awesome-reveal';
+import { Fade } from "react-awesome-reveal";
 import Container from "./Container.astro";
-import QuestionItem from './ui/QuestionItem.jsx';
-import DataSharingPolicy from './ui/DataSharingPolicy.jsx';
+import QuestionItem from "./ui/QuestionItem.jsx";
+import DataSharingPolicy from "./ui/DataSharingPolicy.jsx";
 ---
 
 <section id="faq" class="relative px-4 pt-32">
-  <Container>  
-    <h2 class="md:text-4xl text-5xl text-center text-gray-800 dark:text-white font-bold mb-20">
-      Frequently Asked Questions <br /> You Have the <span class="text-gradient dark:text-white">Questions</span>, We Have the <span class="text-gradient dark:text-white">Answers</span>
+  <Container>
+    <h2
+      class="md:text-4xl text-5xl text-center text-gray-800 dark:text-white font-bold mb-20"
+    >
+      Frequently Asked Questions <br /> You Have the <span
+        class="text-gradient dark:text-white">Questions</span
+      >, We Have the <span class="text-gradient dark:text-white">Answers</span>
     </h2>
-    <div class="mx-auto border bg-white border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10 rounded-xl p-6">
-      <QuestionItem 
+    <div
+      class="mx-auto border bg-white border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10 rounded-xl p-6"
+    >
+      <QuestionItem
         client:load
-        title="What is the Entrepreneurial Investing program about?" 
-        answer="The program offers comprehensive training on how to invest in startups in Latin America. It includes strategies, tips, and secrets from regional experts to make informed decisions and maximize investment returns." 
+        title="What is Makers?"
+        answer="Makers is a talent incubator based in LATAM that focuses on nurturing and developing skills in entrepreneurship, coding, and business. Our mission is to empower the next generation of innovators and leaders in these field."
       />
-      
-      <QuestionItem 
-      client:load
-        title="Who are the experts behind the program?" 
-        answer="The program is designed and led by experienced investors and professionals from the Latam entrepreneurial ecosystem, with years of successful investment experience and deep market knowledge." 
-      />
-
-      <QuestionItem 
-      client:load
-        title="What will I learn in the program?" 
-        answer="You will learn how to identify promising startups, conduct effective due diligence, understand different business models, evaluate founding teams, and much more. You will also receive practical advice and real case studies." 
-      />
-
-      <QuestionItem 
-      client:load
-        title="Are there any prerequisites to join the program?" 
-        answer="No specific prior knowledge is required, although a basic understanding of finance and business can be helpful. The program is designed to be accessible to both beginners and experienced investors." 
-      />
-
-      <DataSharingPolicy client:load/>
-
-      <QuestionItem 
+      <hr class="w-full border-gray-500 dark:border-white/60" />
+      <QuestionItem
         client:load
-        title="How can I get in touch with you?" 
-        answer="Feel free to email us at info@entrepreneurial.com." 
+        title="Why is Makers free?"
+        answer="Our program is free because we believe in making high-quality education and resources accessible to everyone. We are supported by partnerships, sponsorships, and grants that allow us to offer this opportunity at no cost to our participants."
+      />
+      <hr class="w-full border-gray-500 dark:border-white/60" />
+
+      <QuestionItem
+        client:load
+        title="Who can apply to Makers?"
+        answer="Our program is open to individuals who are passionate about entrepreneurship, coding, and business. We welcome applications from all backgrounds and skill levels, whether you are a beginner or an experienced professional looking to enhance your skills."
+      />
+      <hr class="w-full border-gray-500 dark:border-white/60" />
+
+      <QuestionItem
+        client:load
+        title="What are the criteria for selection?"
+        answer="We select participants based on their passion, potential, and commitment to learning and growing in the fields of entrepreneurship, coding, and business. We look for individuals who are motivated, curious, and eager to make an impact."
+      />
+      <hr class="w-full border-gray-500 dark:border-white/60" />
+
+      <QuestionItem
+        client:load
+        title="What happens after I complete the program?"
+        answer="After completing the program, you will have the skills, knowledge, and network to pursue your entrepreneurial ventures. Additionally, graduates will be offered a top internship in a high-growth startup in LATAM, providing invaluable real-world experience and opportunities for career advancement."
       />
     </div>
     <div class="relative px-4 my-14">
-      <p class="text-xl text-black max-w-4xl mx-auto text-center">
-        Still have more questions? Contact us <a href="mailto:team@makers.ngo" class="text-makers_green hover:text-makers_purple transition-colors">team@maker.ngo</a>
+      <p
+        class="text-xl text-gray-800 dark:text-white max-w-4xl mx-auto text-center"
+      >
+        Still have more questions? Contact us <a
+          href="mailto:team@makers.ngo"
+          class="text-makers_green hover:text-makers_purple transition-colors"
+          >team@makers.ngo</a
+        >
       </p>
     </div>
   </Container>

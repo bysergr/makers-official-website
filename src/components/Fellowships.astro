@@ -1,7 +1,110 @@
 ---
+import { Image } from "astro:assets";
+import Container from "./Container.astro";
 
+import CodingFellow from "../../public/images/icons/coding_fellow.png";
+import BusinessFellow from "../../public/images/icons/business_fellow.png";
 ---
 
-<section class="py-8 px-8 lg:py-20">
-  <div class="container mx-auto"></div>
+<section class="text-center relative" id="fellows">
+  <div
+    aria-hidden="true"
+    class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20 -z-10"
+  >
+    <div
+      class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"
+    >
+    </div>
+    <div
+      class="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"
+    >
+    </div>
+  </div>
+  <Container>
+    <h2
+      class="mb-20 space-y-4 text-5xl font-bold text-gray-800 md:text-4xl dark:text-white"
+    >
+      Makers Fellows
+    </h2>
+    <div class="flex flex-col gap-8">
+      <article
+        class="text-left md:flex gap-8 h-full mx-auto my-0 p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none"
+      >
+        <div class="md:w-3/5 flex flex-col gap-2 my-auto">
+          <p class="font-semibold dark:text-white">Makers Fellow</p>
+          <h3 class="font-bold lg:text-2xl text-gradient dark:text-white">
+            Business Fellow
+          </h3>
+          <p class="text-gray-600 dark:text-gray-100">
+            The Makers Business Fellowship is an intensive program designed to
+            identify, train, and accelerate the most promising entrepreneurs.
+            Our goal is to provide participants with the tools, resources, and
+            networks necessary to take their business ideas to the next level.
+          </p>
+          <a
+            href="https://airtable.com/appV1aT1ZYuXvXANu/shra5fYnJ8r0XwKJp"
+            target="_blank"
+            rel="noopener"
+            class="text-sm mt-4 font-semibold py-2 hidden md:flex md:w-max items-center justify-center px-8 text-makers_purple border border-makers_purple rounded-xl transition active:duration-75 hover:bg-makers_purple hover:text-white duration-75"
+          >
+            Apply Now
+          </a>
+        </div>
+        <Image
+          src={BusinessFellow}
+          alt=""
+          class="mx-auto mt-8 md:my-auto md:h-[180px] md:w-[180px]"
+          width={140}
+          height={140}
+        />
+        <a
+          href="https://airtable.com/appV1aT1ZYuXvXANu/shra5fYnJ8r0XwKJp"
+          target="_blank"
+          rel="noopener"
+          class="text-sm mt-4 font-semibold py-2 w-full flex md:hidden items-center justify-center px-8 text-makers_purple border border-makers_purple rounded-xl transition active:duration-75 hover:bg-makers_purple hover:text-white duration-75"
+        >
+          Apply Now
+        </a>
+      </article>
+      <article
+        class="text-left md:flex gap-8 h-full mx-auto my-0 p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none"
+      >
+        <div class="md:w-3/5 flex flex-col gap-2 my-auto">
+          <p class="font-semibold dark:text-white">Makers Fellow</p>
+          <h3 class="font-bold lg:text-2xl text-gradient dark:text-white">
+            Coding Fellow
+          </h3>
+          <p class="text-gray-600 dark:text-gray-100">
+            The Makers Coding Fellowship is a rigorous program created to
+            discover, mentor, and fast-track the most skilled coders and
+            developers. Our aim is to provide participants with the expertise,
+            tools, and connections required to thrive in the tech industry.
+          </p>
+          <a
+            href="https://airtable.com/appV1aT1ZYuXvXANu/shra5fYnJ8r0XwKJp"
+            target="_blank"
+            rel="noopener"
+            class="text-sm mt-4 font-semibold py-2 hidden md:flex md:w-max items-center justify-center px-8 text-makers_purple border border-makers_purple rounded-xl transition active:duration-75 hover:bg-makers_purple hover:text-white duration-75"
+          >
+            Apply Now
+          </a>
+        </div>
+        <Image
+          src={CodingFellow}
+          alt=""
+          class="mx-auto mt-8 md:my-auto md:h-[180px] md:w-[180px]"
+          width={140}
+          height={140}
+        />
+        <a
+          href="https://airtable.com/appV1aT1ZYuXvXANu/shra5fYnJ8r0XwKJp"
+          target="_blank"
+          rel="noopener"
+          class="text-sm mt-4 font-semibold py-2 w-full flex md:hidden items-center justify-center px-8 text-makers_purple border border-makers_purple rounded-xl transition active:duration-75 hover:bg-makers_purple hover:text-white duration-75"
+        >
+          Apply Now
+        </a>
+      </article>
+    </div>
+  </Container>
 </section>
