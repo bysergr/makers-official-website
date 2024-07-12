@@ -1,75 +1,125 @@
 ---
-import Container from "./Container.astro"
-import FS_image from "../../public/images/FS_logo.jpeg"
-import EI_image from "../../public/images/EI_logo (2).jpeg"
-import { Image } from 'astro:assets';
-
+import Container from "./Container.astro";
+import FS_image from "../../public/images/FS_logo.jpeg";
+import EI_image from "../../public/images/EI_logo (2).jpeg";
+import { Image } from "astro:assets";
 ---
 
 <div id="programs">
   <Container>
-      <div class="mb-12 space-y-2 text-center">
-        <h2 class="text-3xl font-bold text-gray-800 md:text-4xl dark:text-white">Also By Makers</h2>
-        <p class="lg:mx-auto lg:w-6/12 text-gray-600 dark:text-gray-300">
-          Quam hic dolore cumque voluptate rerum beatae et quae, tempore sunt, debitis dolorum officia
-          aliquid explicabo? Excepturi, voluptate?
-        </p>
-      </div>
-      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        <div class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
+    <div class="mb-12 space-y-2 text-center">
+      <h2 class="text-3xl font-bold text-gray-800 md:text-4xl dark:text-white">
+        Also By Makers
+      </h2>
+      <p class="lg:mx-auto lg:w-6/12 text-gray-600 dark:text-gray-300 pt-7">
+        Makers is not just the fellowship! We have a ton of initiative to
+        improve and support the entrepreneurials and the startup ecosystem.
+      </p>
+    </div>
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mt-14">
+      <div
+        class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10"
+      >
+        <div class="flex-col flex justify-between h-full">
           <div class="relative overflow-hidden rounded-xl">
-            <Image src={FS_image}
-            alt="art cover" loading="lazy" width="1000" height="667" class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105"/>
+            <a
+              href="https://fundraisingschool.com/"
+              target="_blank"
+              rel="noopener"
+            >
+              <Image
+                src={FS_image}
+                alt="art cover"
+                loading="lazy"
+                width="1000"
+                height="667"
+                class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105"
+              />
+            </a>
           </div>
+          
           <div class="mt-6 relative">
             <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
               Fundraising School
             </h3>
             <p class="mt-6 mb-8 text-gray-600 dark:text-gray-300">
-              Master the art of fundraising with top 1% speakers. Redefine what’s possible for your business.
+              Master the art of fundraising with top 1% speakers. Redefine
+              what’s possible for your business.
             </p>
-            <a class="inline-block" href="https://fundraisingschool.com/" target="_blank" rel="noopener">
-              <span class="text-info dark:text-blue-300">More info</span>
-            </a>
           </div>
-          
+          <a
+            class="block text-center"
+            href="https://fundraisingschool.com/"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="text-info dark:text-blue-300">More info</span>
+          </a>
         </div>
-        <div class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
+      </div>
+      <div
+        class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10"
+      >
+        <div class="flex-col flex justify-between h-full">
           <div class="relative overflow-hidden rounded-xl">
-            <Image src={EI_image}
-            alt="art cover" loading="lazy" width="1000" height="667" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105"/>
+            <a href="https://entrepreneurial.vc/" target="_blank" rel="noopener">
+              <Image
+                src={EI_image}
+                alt="art cover"
+                loading="lazy"
+                width="1000"
+                height="667"
+                class="h-64 w-full object-cover transition duration-500 group-hover:scale-105"
+              />
+            </a>
           </div>
           <div class="mt-6 relative">
             <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
               Entrepreneural Investment
             </h3>
             <p class="mt-6 mb-8 text-gray-600 dark:text-gray-300">
-              Your gateway to mastering the art of investing in startups across Latin America.
+              Your gateway to mastering the art of investing in startups across
+              Latin America.
             </p>
-            <a class="inline-block" href="https://entrepreneurial.vc/" target="_blank" rel="noopener">
-              <span class="text-info dark:text-blue-300">More Info</span>
-            </a>
           </div>
-          
-        </div>
-        <div class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
-          <div class="relative overflow-hidden rounded-xl">
-            <img src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
-            alt="art cover" loading="lazy" width="1000" height="667" class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105"/>
-          </div>
-          <div class="mt-6 relative">
-            <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
-              Mavericks
-            </h3>
-            <p class="mt-6 mb-8 text-gray-600 dark:text-gray-300">
-              Voluptates harum aliquam totam, doloribus eum impedit atque! Temporibus...
-            </p>
-            
-              <span class="text-gray-600">Cooming soon...</span>
-
-          </div>
-          
-        </div>
+        
+        <a
+          class="block text-center"
+          href="https://entrepreneurial.vc/"
+          target="_blank"
+          rel="noopener"
+        >
+          <span class="text-info dark:text-blue-300">More Info</span>
+        </a>
       </div>
+      </div>
+      <div
+        class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10"
+      >
+      <div class="flex-col flex justify-between h-full">
+        <div class="relative overflow-hidden rounded-xl">
+          <img
+            src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
+            alt="art cover"
+            loading="lazy"
+            width="1000"
+            height="667"
+            class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105"
+          />
+        </div>
+        
+        <div class="mt-6 relative">
+          <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
+            Mavericks
+          </h3>
+          <p class="mt-6 mb-8 text-gray-600 dark:text-gray-300">
+            Fellowship focused on founders and disruptive ideas.
+          </p>
+
+        </div>
+        <span class="text-gray-600 block text-center">Cooming soon...</span>
+      </div>
+    </div>
+    </div>
   </Container>
 </div>

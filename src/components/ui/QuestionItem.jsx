@@ -22,7 +22,7 @@ function QuestionItem({ title, answer }) {
     <Disclosure>
       {({ open }) => (
         <>
-          <Disclosure.Button className="font-semibold text-lg text-left flex gap-2 justify-between items-center w-full py-3 px-4 bg-white hover:bg-gray-100 transition-colors duration-300 rounded-lg shadow-md">
+          <Disclosure.Button className="my-6 font-semibold text-lg text-left flex gap-2 justify-between items-center w-full py-3 px-4 bg-white hover:bg-gray-100 transition-colors duration-300 rounded-lg shadow-md">
             <p className="block max-w-[90%]">{title}</p>
             <ChevronDownIcon className={clsx("w-6 h-6 transition-transform", open ? "rotate-180" : "rotate-0")} />
           </Disclosure.Button>
