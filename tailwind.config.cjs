@@ -365,6 +365,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        'Popins',
         'ui-sans-serif',
         'system-ui',
         '-apple-system',
