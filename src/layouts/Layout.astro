@@ -16,6 +16,7 @@ const { title } = Astro.props;
     />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link type="text/plain" rel="author" href="http://makers.ngo/humans.txt" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
     <meta name="generator" content={Astro.generator} />
     <meta
       name="description"
@@ -36,6 +37,19 @@ const { title } = Astro.props;
         },
       ]}
     />
+    <script
+      type="text/partytown"
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=GTM-NXJQ52K7"></script>
+    <script type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "GTM-NXJQ52K7");
+    </script>
   </head>
   <body class="bg-white dark:bg-gray-900">
     <AppHeader />
