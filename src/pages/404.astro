@@ -1,0 +1,24 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <main class="text-center min-h-screen grid place-content-center">
+    <p class="font-semibold text-4xl text-gradient">PAGE NOT FOUND</p>
+    <a
+      href="/"
+      class="flex items-center justify-center mt-4 text-lg font-semibold"
+    >
+      <span class="text-lg dark:text-white mr-1">Go back to</span>
+      <span class="text-makers_purple text-lg font-semibold"> Home</span>
+    </a>
+  </main>
+</Layout>
+
+<style>
+  .text-gradient {
+    background: linear-gradient(90deg, #6dbfa4, #8695cb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+</style>
